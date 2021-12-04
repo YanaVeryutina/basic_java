@@ -12,26 +12,26 @@ public class Phone {
     public void sayModel() {
         System.out.println(model);
     }
-        public void incrementWeight() {
-                System.out.println(weight);
-                weight = weight + 100;
-        }
 
-        public static void main(String[] args) {
-            Phone phone = new Phone();
-            phone.model = "iPhone XR";
-            phone.weight = 204;
-            Phone samsung = new Phone();
-            samsung.model = "Samsung S7";
-            samsung.weight = 150;
-            phone.sayModel();
-            samsung.sayModel();
+    public void incrementWeight() {
+               weight = weight + 100;
+    }
 
-            phone.incrementWeight();
-            phone.sayWeight();
-            samsung.sayWeight();
+    public static void main(String[] args) {
+        Phone my = new Phone();
+        my.model = "iPhone XR";
+        my.weight = 204;
+        Phone samsung = new Phone();
+        samsung.model = "Samsung S7";
+        samsung.weight = 150;
+        my.sayModel();
+        samsung.sayModel();
 
-        }
+        my.incrementWeight();
+        my.sayWeight();
+        samsung.sayWeight();
+
+    }
 }
 
 
